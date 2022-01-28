@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="img/alura.svg" alt="Logo da Alura">
+    </nav>
+    
+    
+    <main>
+        <div class="campo" id="entrada">
+            <textarea id="text-entrada" placeholder="Digite seu texto" autofocus></textarea>
+            <ul id="erros"></ul>
+            <img src="./img/alerta.svg" alt="">
+            <label for="input-texto">Apenas letras minúsculas e sem acento.</label> <br>
+            <div class="botoes">
+                <button id="btn-criptografar" class="bloqueado">Criptografar</button>
+                <button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
+            </div>
+        </div>
+        <div class="campo" id="resultado">
+            <textarea id="text-resultado" readonly></textarea>
+            <b id="bold-text">Nenhuma mensagem encontrada</b>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <div class="botoes">
+                <button id="btn-copiar" class="bloqueado">Copiar</button>
+                <button id="btn-limpar" class="bloqueado">Limpar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2022 &copy; - Desenvolvido por <b><span style="color: #0a3871;">Fernanda Naser</span></b></p>
+        <div class="social">
+            <a href="https://github.com/fernandanaser" target="_blank"><img src="img/social/github.png" alt="Logo do GitHub"></a>
+            <a href="https://www.linkedin.com/in/fernandanaser/" target="_blank"><img src="img/social/linkedin.png" alt="Logo do GitHub"></a>
+        </div>
+
+
+    </footer>
+    <div id="modal-copiar" class="modal">
+        <p id="modal-copiar-texto"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
